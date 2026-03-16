@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 
 public class Main {
 
-    static final String API_KEY    = "46ac08cd-9119-4dbc-bd7f-40c5ff32e71e";
+    static final String API_KEY    = "";
     static final String EXCEL_PATH = "T_corpus.xlsx";
 
     public static void main(String[] args) throws Exception {
