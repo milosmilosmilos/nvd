@@ -1,0 +1,1054 @@
+NVD Analysis - 2026-03-21 14:07
+API key: YES
+Threats loaded from Excel: 25
+
+
+[P-01] VM Escape
+    'VM escape': 22 total
+    'virtual machine escape': 5 total
+    'hypervisor escape': 1 total
+    'guest escape': 10 total
+  Unique CVEs for P-01: 27
+
+[P-02] Vulnerable VM Image
+    'VM image vulnerability': 11 total
+    'vulnerable VM image': 2 total
+    'malicious VM image': 4 total
+    'AMI vulnerability': 81 total
+  Unique CVEs for P-02: 95
+
+[P-03] Cross-VM Side-Channel Attack
+    'cross-VM side channel': 0 total
+    'side channel attack cloud': 0 total
+    'cache side channel VM': 1 total
+  Unique CVEs for P-03: 1
+
+[P-04] Network Virtualization
+    'virtual network attack': 54 total
+    'VM mapping attack': 0 total
+    'network virtualization vulnerability': 11 total
+  Unique CVEs for P-04: 56
+
+[P-05] Cross VM Leakage
+    'cross VM leakage': 0 total
+    'VM data leakage': 0 total
+    'cross-tenant leakage cloud': 1 total
+  Unique CVEs for P-05: 1
+
+[P-06] HV DoS
+    'hypervisor denial of service': 15 total
+    'HV DoS': 3 total
+    'hypervisor resource exhaustion': 0 total
+  Unique CVEs for P-06: 18
+
+[P-07] HV Tampering
+    'hypervisor tampering': 2 total
+    'hypervisor integrity': 11 total
+    'HV modification attack': 0 total
+  Unique CVEs for P-07: 13
+
+[P-08] Cache-Based Side-Channel Attack
+    'cache side channel attack': 2 total
+    'cache timing attack': 3 total
+    'S-Box cache attack': 1 total
+  Unique CVEs for P-08: 6
+
+[P-09] Hardware Information Leakage
+    'hardware information leakage cloud': 0 total
+    'cache information leakage': 3 total
+    'memory leakage cloud': 0 total
+  Unique CVEs for P-09: 3
+
+[P-10] XML Attack
+    'XML attack cloud': 12 total
+    'XML signature attack': 20 total
+    'XML injection cloud': 5 total
+  Unique CVEs for P-10: 33
+
+[P-11] Shared Resource
+    'shared resource attack cloud': 0 total
+    'resource conflict PaaS': 0 total
+    'multitenancy resource abuse': 0 total
+  Unique CVEs for P-11: 0
+
+[P-12] Resource Starvation
+    'resource starvation cloud': 0 total
+    'resource exhaustion PaaS': 0 total
+    'Java VM resource abuse': 0 total
+  Unique CVEs for P-12: 0
+
+[P-13] Information Leakage
+    'information leakage PaaS': 0 total
+    'thread leakage cloud': 0 total
+    'safe thread termination': 0 total
+  Unique CVEs for P-13: 0
+
+[P-14] Vulnerable Host/Object
+    'vulnerable object cloud': 4 total
+    'vulnerable host PaaS': 0 total
+    'TCB vulnerability': 2 total
+    'interoperability attack': 7 total
+  Unique CVEs for P-14: 13
+
+[P-15] Unauthorized Access
+    'unauthorized access cloud': 45 total
+    'broken authentication SaaS': 0 total
+    'IAAA cloud': 0 total
+  Unique CVEs for P-15: 45
+
+[P-16] Web API Security
+    'web API vulnerability SaaS': 0 total
+    'broken access control API': 11 total
+    'XSS cloud': 37 total
+    'insecure API SaaS': 2 total
+  Unique CVEs for P-16: 50
+
+[P-17] Data Breach
+    'data breach cloud': 1 total
+    'data leakage SaaS': 0 total
+    'cloud data exposure': 8 total
+  Unique CVEs for P-17: 9
+
+[P-18] Data Recovery
+    'data recovery vulnerability cloud': 1 total
+    'insecure data backup cloud': 0 total
+    'cloud data recovery': 3 total
+  Unique CVEs for P-18: 3
+
+[P-19] Data Alteration
+    'data alteration cloud': 0 total
+    'data integrity attack SaaS': 0 total
+    'man in the middle data cloud': 0 total
+  Unique CVEs for P-19: 0
+
+[P-20] Data Vulnerability
+    'data vulnerability cloud': 106 total
+    'HTTP attack SaaS': 3 total
+    'insecure data storage cloud': 0 total
+  Unique CVEs for P-20: 109
+
+[P-21] DoS/DDoS
+    'denial of service cloud': 66 total
+    'DDoS cloud': 1 total
+    'SYN flood cloud': 0 total
+    'resource starvation attack': 0 total
+  Unique CVEs for P-21: 66
+
+[P-22] MiTC (Man-in-The-Cloud)
+    'man in the cloud': 219 total
+    'MiTC attack': 0 total
+    'synchronization token theft cloud': 0 total
+  Unique CVEs for P-22: 219
+
+[P-23] API
+    'API security cloud': 14 total
+    'insecure API cloud': 2 total
+    'API eavesdropping': 0 total
+    'API authentication failure': 2 total
+  Unique CVEs for P-23: 18
+
+[P-24] Malicious Insider
+    'malicious insider cloud': 0 total
+    'insider threat cloud': 3 total
+    'CSP employee attack': 0 total
+  Unique CVEs for P-24: 3
+
+[P-25] Hijacking
+    'account hijacking cloud': 0 total
+    'session hijacking cloud': 4 total
+    'credential theft cloud': 3 total
+    'service hijacking': 23 total
+  Unique CVEs for P-25: 30
+
+CLEANING - raw records: 725
+
+  Excluded: {REJECTED=0, DISPUTED=0, no_description=0, no_cvss=59}
+  D_clean:  666 records
+  D_clean.csv saved
+
+ANALYSIS BY CATEGORY
+
+========================================================
+  P-01 - VM Escape  [IaaS]
+========================================================
+  Total CVEs: 25
+  RQ1: COVERED
+  N2 (CVSS>=7.0, v3 primary / v2 fallback): 20  (80.0% of N)
+
+  -- CVSS v3 (25 records) --
+     Median:           8.8
+     Min / Max:        2.2 / 10.0
+     Critical (>=9.0): 10  (40.0%)
+     High (7.0-8.9):   10  (40.0%)
+     Medium (4.0-6.9): 4  (16.0%)
+     Low (<4.0):       1  (4.0%)
+
+  -- CVSS v2 (5 records) --
+     Median:    7.2
+     Min / Max: 4.3 / 9.3
+
+  -- CVE trend by year --
+     2010:                                          0
+     2011:                                          0
+     2012:                                          0
+     2013:                                          0
+     2014:                                          0
+     2015:                                          0
+     2016:                                          0
+     2017:                                          0
+     2018:                                          0
+     2019:                                          0
+     2020:                                          0
+     2021:                                          0
+
+  -- Top 10 CWE --
+     CWE-787                        4
+     CWE-284                        3
+     CWE-125                        2
+     CWE-77                         2
+     CWE-74                         2
+     CWE-94                         2
+     CWE-367                        1
+     CWE-268                        1
+     CWE-862                        1
+     CWE-863                        1
+
+========================================================
+  P-02 - Vulnerable VM Image  [IaaS]
+========================================================
+  Total CVEs: 90
+  RQ1: COVERED
+  N2 (CVSS>=7.0, v3 primary / v2 fallback): 52  (57.8% of N)
+
+  -- CVSS v3 (90 records) --
+     Median:           7.1
+     Min / Max:        2.7 / 10.0
+     Critical (>=9.0): 13  (14.4%)
+     High (7.0-8.9):   39  (43.3%)
+     Medium (4.0-6.9): 36  (40.0%)
+     Low (<4.0):       2  (2.2%)
+
+  -- CVSS v2 (0 records) --
+
+  -- CVE trend by year --
+     2010:                                          0
+     2011:                                          0
+     2012:                                          0
+     2013:                                          0
+     2014:                                          0
+     2015:                                          0
+     2016:                                          0
+     2017:                                          0
+     2018:                                          0
+     2019:                                          0
+     2020:                                          0
+     2021:                                          0
+
+  -- Top 10 CWE --
+     CWE-79                         15
+     CWE-352                        9
+     CWE-20                         6
+     CWE-798                        4
+     CWE-787                        4
+     CWE-121                        4
+     NVD-CWE-noinfo                 4
+     CWE-22                         3
+     CWE-120                        3
+     CWE-122                        3
+
+========================================================
+  P-03 - Cross-VM Side-Channel Attack  [IaaS]
+========================================================
+  Total CVEs: 1
+  RQ1: GAP
+  N2 (CVSS>=7.0, v3 primary / v2 fallback): 0  (0.0% of N)
+
+  -- CVSS v3 (1 records) --
+     Median:           4.7
+     Min / Max:        4.7 / 4.7
+     Critical (>=9.0): 0  (0.0%)
+     High (7.0-8.9):   0  (0.0%)
+     Medium (4.0-6.9): 1  (100.0%)
+     Low (<4.0):       0  (0.0%)
+
+  -- CVSS v2 (0 records) --
+
+  -- CVE trend by year --
+     2010:                                          0
+     2011:                                          0
+     2012:                                          0
+     2013:                                          0
+     2014:                                          0
+     2015:                                          0
+     2016:                                          0
+     2017:                                          0
+     2018:                                          0
+     2019:                                          0
+     2020:                                          0
+     2021:                                          0
+
+  -- Top 10 CWE --
+     NVD-CWE-noinfo                 1
+
+========================================================
+  P-04 - Network Virtualization  [IaaS]
+========================================================
+  Total CVEs: 54
+  RQ1: COVERED
+  N2 (CVSS>=7.0, v3 primary / v2 fallback): 32  (59.3% of N)
+
+  -- CVSS v3 (54 records) --
+     Median:           7.5
+     Min / Max:        4.3 / 9.8
+     Critical (>=9.0): 8  (14.8%)
+     High (7.0-8.9):   24  (44.4%)
+     Medium (4.0-6.9): 22  (40.7%)
+     Low (<4.0):       0  (0.0%)
+
+  -- CVSS v2 (3 records) --
+     Median:    6.1
+     Min / Max: 5.8 / 7.5
+
+  -- CVE trend by year --
+     2010:                                          0
+     2011:                                          0
+     2012:                                          0
+     2013:                                          0
+     2014:                                          0
+     2015:                                          0
+     2016:                                          0
+     2017:                                          0
+     2018:                                          0
+     2019:                                          0
+     2020:                                          0
+     2021:                                          0
+
+  -- Top 10 CWE --
+     NVD-CWE-noinfo                 14
+     CWE-306                        6
+     CWE-400                        2
+     CWE-918                        2
+     CWE-653                        1
+     CWE-312                        1
+     CWE-434                        1
+     CWE-259                        1
+     CWE-732                        1
+     CWE-22                         1
+
+========================================================
+  P-05 - Cross VM Leakage  [IaaS]
+========================================================
+  Total CVEs: 0
+  *** GAP - no signal in NVD ***
+  N2 (CVSS>=7.0, v3 primary / v2 fallback): 0
+
+========================================================
+  P-06 - HV DoS  [IaaS]
+========================================================
+  Total CVEs: 18
+  RQ1: COVERED
+  N2 (CVSS>=7.0, v3 primary / v2 fallback): 7  (38.9% of N)
+
+  -- CVSS v3 (18 records) --
+     Median:           6.6
+     Min / Max:        5.5 / 8.2
+     Critical (>=9.0): 0  (0.0%)
+     High (7.0-8.9):   7  (38.9%)
+     Medium (4.0-6.9): 11  (61.1%)
+     Low (<4.0):       0  (0.0%)
+
+  -- CVSS v2 (4 records) --
+     Median:    2.1
+     Min / Max: 2.1 / 4.9
+
+  -- CVE trend by year --
+     2010:                                          0
+     2011:                                          0
+     2012:                                          0
+     2013:                                          0
+     2014:                                          0
+     2015:                                          0
+     2016:                                          0
+     2017:                                          0
+     2018:                                          0
+     2019:                                          0
+     2020:                                          0
+     2021:                                          0
+
+  -- Top 10 CWE --
+     NVD-CWE-noinfo                 3
+     CWE-20                         2
+     CWE-770                        2
+     CWE-908                        2
+     CWE-476                        2
+     CWE-125                        1
+     CWE-367                        1
+     CWE-346                        1
+     CWE-369                        1
+     CWE-284                        1
+
+========================================================
+  P-07 - HV Tampering  [IaaS]
+========================================================
+  Total CVEs: 13
+  RQ1: COVERED
+  N2 (CVSS>=7.0, v3 primary / v2 fallback): 6  (46.2% of N)
+
+  -- CVSS v3 (13 records) --
+     Median:           6.5
+     Min / Max:        3.2 / 9.8
+     Critical (>=9.0): 1  (7.7%)
+     High (7.0-8.9):   5  (38.5%)
+     Medium (4.0-6.9): 5  (38.5%)
+     Low (<4.0):       2  (15.4%)
+
+  -- CVSS v2 (0 records) --
+
+  -- CVE trend by year --
+     2010:                                          0
+     2011:                                          0
+     2012:                                          0
+     2013:                                          0
+     2014:                                          0
+     2015:                                          0
+     2016:                                          0
+     2017:                                          0
+     2018:                                          0
+     2019:                                          0
+     2020:                                          0
+     2021:                                          0
+
+  -- Top 10 CWE --
+     CWE-665                        2
+     CWE-732                        2
+     CWE-119                        2
+     NVD-CWE-noinfo                 2
+     CWE-20                         1
+     CWE-416                        1
+     CWE-94                         1
+     CWE-121                        1
+     CWE-420                        1
+
+========================================================
+  P-08 - Cache-Based Side-Channel Attack  [IaaS]
+========================================================
+  Total CVEs: 6
+  RQ1: GAP
+  N2 (CVSS>=7.0, v3 primary / v2 fallback): 1  (16.7% of N)
+
+  -- CVSS v3 (6 records) --
+     Median:           5.2
+     Min / Max:        2.5 / 9.8
+     Critical (>=9.0): 1  (16.7%)
+     High (7.0-8.9):   0  (0.0%)
+     Medium (4.0-6.9): 4  (66.7%)
+     Low (<4.0):       1  (16.7%)
+
+  -- CVSS v2 (2 records) --
+     Median:    3.9
+     Min / Max: 1.0 / 6.8
+
+  -- CVE trend by year --
+     2010:                                          0
+     2011:                                          0
+     2012:                                          0
+     2013:                                          0
+     2014:                                          0
+     2015:                                          0
+     2016:                                          0
+     2017:                                          0
+     2018:                                          0
+     2019:                                          0
+     2020:                                          0
+     2021:                                          0
+
+  -- Top 10 CWE --
+     CWE-203                        3
+     CWE-208                        2
+     CWE-918                        1
+
+========================================================
+  P-09 - Hardware Information Leakage  [IaaS]
+========================================================
+  Total CVEs: 3
+  RQ1: GAP
+  N2 (CVSS>=7.0, v3 primary / v2 fallback): 2  (66.7% of N)
+
+  -- CVSS v3 (3 records) --
+     Median:           7.5
+     Min / Max:        5.6 / 7.6
+     Critical (>=9.0): 0  (0.0%)
+     High (7.0-8.9):   2  (66.7%)
+     Medium (4.0-6.9): 1  (33.3%)
+     Low (<4.0):       0  (0.0%)
+
+  -- CVSS v2 (0 records) --
+
+  -- CVE trend by year --
+     2010:                                          0
+     2011:                                          0
+     2012:                                          0
+     2013:                                          0
+     2014:                                          0
+     2015:                                          0
+     2016:                                          0
+     2017:                                          0
+     2018:                                          0
+     2019:                                          0
+     2020:                                          0
+     2021:                                          0
+
+  -- Top 10 CWE --
+     CWE-444                        1
+     N/A                            1
+     CWE-200                        1
+
+========================================================
+  P-10 - XML Attack  [IaaS]
+========================================================
+  Total CVEs: 29
+  RQ1: COVERED
+  N2 (CVSS>=7.0, v3 primary / v2 fallback): 23  (79.3% of N)
+
+  -- CVSS v3 (29 records) --
+     Median:           8.9
+     Min / Max:        4.9 / 10.0
+     Critical (>=9.0): 14  (48.3%)
+     High (7.0-8.9):   9  (31.0%)
+     Medium (4.0-6.9): 6  (20.7%)
+     Low (<4.0):       0  (0.0%)
+
+  -- CVSS v2 (2 records) --
+     Median:    6.3
+     Min / Max: 5.1 / 7.5
+
+  -- CVE trend by year --
+     2010:                                          0
+     2011:                                          0
+     2012:                                          0
+     2013:                                          0
+     2014:                                          0
+     2015:                                          0
+     2016:                                          0
+     2017:                                          0
+     2018:                                          0
+     2019:                                          0
+     2020:                                          0
+     2021:                                          0
+
+  -- Top 10 CWE --
+     CWE-347                        13
+     CWE-611                        9
+     CWE-287                        2
+     CWE-345                        1
+     CWE-776                        1
+     CWE-20                         1
+     CWE-120                        1
+     CWE-134                        1
+
+========================================================
+  P-11 - Shared Resource  [PaaS]
+========================================================
+  Total CVEs: 0
+  *** GAP - no signal in NVD ***
+  N2 (CVSS>=7.0, v3 primary / v2 fallback): 0
+
+========================================================
+  P-12 - Resource Starvation  [PaaS]
+========================================================
+  Total CVEs: 0
+  *** GAP - no signal in NVD ***
+  N2 (CVSS>=7.0, v3 primary / v2 fallback): 0
+
+========================================================
+  P-13 - Information Leakage  [PaaS]
+========================================================
+  Total CVEs: 0
+  *** GAP - no signal in NVD ***
+  N2 (CVSS>=7.0, v3 primary / v2 fallback): 0
+
+========================================================
+  P-14 - Vulnerable Host/Object  [PaaS]
+========================================================
+  Total CVEs: 13
+  RQ1: COVERED
+  N2 (CVSS>=7.0, v3 primary / v2 fallback): 5  (38.5% of N)
+
+  -- CVSS v3 (13 records) --
+     Median:           6.5
+     Min / Max:        3.7 / 8.8
+     Critical (>=9.0): 0  (0.0%)
+     High (7.0-8.9):   5  (38.5%)
+     Medium (4.0-6.9): 7  (53.8%)
+     Low (<4.0):       1  (7.7%)
+
+  -- CVSS v2 (2 records) --
+     Median:    6.7
+     Min / Max: 4.3 / 9.0
+
+  -- CVE trend by year --
+     2010:                                          0
+     2011:                                          0
+     2012:                                          0
+     2013:                                          0
+     2014:                                          0
+     2015:                                          0
+     2016:                                          0
+     2017:                                          0
+     2018:                                          0
+     2019:                                          0
+     2020:                                          0
+     2021:                                          0
+
+  -- Top 10 CWE --
+     CWE-79                         3
+     NVD-CWE-noinfo                 2
+     CWE-125                        1
+     CWE-862                        1
+     CWE-611                        1
+     CWE-306                        1
+     CWE-319                        1
+     CWE-639                        1
+     CWE-770                        1
+     CWE-266                        1
+
+========================================================
+  P-15 - Unauthorized Access  [SaaS]
+========================================================
+  Total CVEs: 37
+  RQ1: COVERED
+  N2 (CVSS>=7.0, v3 primary / v2 fallback): 20  (54.1% of N)
+
+  -- CVSS v3 (37 records) --
+     Median:           7.1
+     Min / Max:        4.3 / 10.0
+     Critical (>=9.0): 8  (21.6%)
+     High (7.0-8.9):   12  (32.4%)
+     Medium (4.0-6.9): 17  (45.9%)
+     Low (<4.0):       0  (0.0%)
+
+  -- CVSS v2 (6 records) --
+     Median:    4.6
+     Min / Max: 4.0 / 5.5
+
+  -- CVE trend by year --
+     2010:                                          0
+     2011:                                          0
+     2012:                                          0
+     2013:                                          0
+     2014:                                          0
+     2015:                                          0
+     2016:                                          0
+     2017:                                          0
+     2018:                                          0
+     2019:                                          0
+     2020:                                          0
+     2021:                                          0
+
+  -- Top 10 CWE --
+     CWE-862                        6
+     NVD-CWE-noinfo                 4
+     CWE-798                        3
+     CWE-78                         2
+     CWE-284                        2
+     CWE-367                        1
+     CWE-312                        1
+     CWE-532                        1
+     CWE-203                        1
+     CWE-522                        1
+
+========================================================
+  P-16 - Web API Security  [SaaS]
+========================================================
+  Total CVEs: 46
+  RQ1: COVERED
+  N2 (CVSS>=7.0, v3 primary / v2 fallback): 20  (43.5% of N)
+
+  -- CVSS v3 (46 records) --
+     Median:           6.5
+     Min / Max:        3.5 / 9.6
+     Critical (>=9.0): 3  (6.5%)
+     High (7.0-8.9):   17  (37.0%)
+     Medium (4.0-6.9): 25  (54.3%)
+     Low (<4.0):       1  (2.2%)
+
+  -- CVSS v2 (6 records) --
+     Median:    4.3
+     Min / Max: 3.5 / 6.4
+
+  -- CVE trend by year --
+     2010:                                          0
+     2011:                                          0
+     2012:                                          0
+     2013:                                          0
+     2014:                                          0
+     2015:                                          0
+     2016:                                          0
+     2017:                                          0
+     2018:                                          0
+     2019:                                          0
+     2020:                                          0
+     2021:                                          0
+
+  -- Top 10 CWE --
+     CWE-79                         30
+     CWE-352                        4
+     CWE-284                        2
+     N/A                            1
+     CWE-269                        1
+     CWE-77                         1
+     CWE-295                        1
+     CWE-285                        1
+     CWE-287                        1
+     CWE-291                        1
+
+========================================================
+  P-17 - Data Breach  [SaaS]
+========================================================
+  Total CVEs: 8
+  RQ1: GAP
+  N2 (CVSS>=7.0, v3 primary / v2 fallback): 6  (75.0% of N)
+
+  -- CVSS v3 (8 records) --
+     Median:           7.5
+     Min / Max:        3.0 / 9.8
+     Critical (>=9.0): 2  (25.0%)
+     High (7.0-8.9):   4  (50.0%)
+     Medium (4.0-6.9): 1  (12.5%)
+     Low (<4.0):       1  (12.5%)
+
+  -- CVSS v2 (0 records) --
+
+  -- CVE trend by year --
+     2010:                                          0
+     2011:                                          0
+     2012:                                          0
+     2013:                                          0
+     2014:                                          0
+     2015:                                          0
+     2016:                                          0
+     2017:                                          0
+     2018:                                          0
+     2019:                                          0
+     2020:                                          0
+     2021:                                          0
+
+  -- Top 10 CWE --
+     CWE-200                        2
+     CWE-532                        1
+     CWE-89                         1
+     CWE-319                        1
+     CWE-639                        1
+     CWE-352                        1
+     CWE-918                        1
+
+========================================================
+  P-18 - Data Recovery  [SaaS]
+========================================================
+  Total CVEs: 2
+  RQ1: GAP
+  N2 (CVSS>=7.0, v3 primary / v2 fallback): 1  (50.0% of N)
+
+  -- CVSS v3 (2 records) --
+     Median:           7.2
+     Min / Max:        6.2 / 8.1
+     Critical (>=9.0): 0  (0.0%)
+     High (7.0-8.9):   1  (50.0%)
+     Medium (4.0-6.9): 1  (50.0%)
+     Low (<4.0):       0  (0.0%)
+
+  -- CVSS v2 (0 records) --
+
+  -- CVE trend by year --
+     2010:                                          0
+     2011:                                          0
+     2012:                                          0
+     2013:                                          0
+     2014:                                          0
+     2015:                                          0
+     2016:                                          0
+     2017:                                          0
+     2018:                                          0
+     2019:                                          0
+     2020:                                          0
+     2021:                                          0
+
+  -- Top 10 CWE --
+     CWE-284                        1
+     CWE-287                        1
+
+========================================================
+  P-19 - Data Alteration  [SaaS]
+========================================================
+  Total CVEs: 0
+  *** GAP - no signal in NVD ***
+  N2 (CVSS>=7.0, v3 primary / v2 fallback): 0
+
+========================================================
+  P-20 - Data Vulnerability  [SaaS]
+========================================================
+  Total CVEs: 93
+  RQ1: COVERED
+  N2 (CVSS>=7.0, v3 primary / v2 fallback): 49  (52.7% of N)
+
+  -- CVSS v3 (93 records) --
+     Median:           7.2
+     Min / Max:        2.7 / 10.0
+     Critical (>=9.0): 15  (16.1%)
+     High (7.0-8.9):   34  (36.6%)
+     Medium (4.0-6.9): 39  (41.9%)
+     Low (<4.0):       5  (5.4%)
+
+  -- CVSS v2 (4 records) --
+     Median:    3.0
+     Min / Max: 1.9 / 4.9
+
+  -- CVE trend by year --
+     2010:                                          0
+     2011:                                          0
+     2012:                                          0
+     2013:                                          0
+     2014:                                          0
+     2015:                                          0
+     2016:                                          0
+     2017:                                          0
+     2018:                                          0
+     2019:                                          0
+     2020:                                          0
+     2021:                                          0
+
+  -- Top 10 CWE --
+     CWE-200                        8
+     CWE-79                         7
+     CWE-918                        6
+     CWE-284                        4
+     CWE-611                        4
+     CWE-89                         4
+     CWE-502                        4
+     CWE-287                        3
+     CWE-532                        3
+     CWE-434                        2
+
+========================================================
+  P-21 - DoS/DDoS  [Generic]
+========================================================
+  Total CVEs: 62
+  RQ1: COVERED
+  N2 (CVSS>=7.0, v3 primary / v2 fallback): 21  (33.9% of N)
+
+  -- CVSS v3 (62 records) --
+     Median:           6.5
+     Min / Max:        3.5 / 9.8
+     Critical (>=9.0): 2  (3.2%)
+     High (7.0-8.9):   19  (30.6%)
+     Medium (4.0-6.9): 38  (61.3%)
+     Low (<4.0):       3  (4.8%)
+
+  -- CVSS v2 (12 records) --
+     Median:    4.3
+     Min / Max: 3.5 / 7.5
+
+  -- CVE trend by year --
+     2010:                                          0
+     2011:                                          0
+     2012:                                          0
+     2013:                                          0
+     2014:                                          0
+     2015:                                          0
+     2016:                                          0
+     2017:                                          0
+     2018:                                          0
+     2019:                                          0
+     2020:                                          0
+     2021:                                          0
+
+  -- Top 10 CWE --
+     CWE-400                        15
+     CWE-20                         9
+     CWE-770                        4
+     CWE-611                        2
+     CWE-476                        2
+     CWE-390                        2
+     CWE-409                        2
+     CWE-269                        2
+     CWE-776                        1
+     CWE-732                        1
+
+========================================================
+  P-22 - MiTC (Man-in-The-Cloud)  [Generic]
+========================================================
+  Total CVEs: 200
+  RQ1: COVERED
+  N2 (CVSS>=7.0, v3 primary / v2 fallback): 110  (55.0% of N)
+
+  -- CVSS v3 (200 records) --
+     Median:           7.1
+     Min / Max:        0.0 / 10.0
+     Critical (>=9.0): 32  (16.0%)
+     High (7.0-8.9):   78  (39.0%)
+     Medium (4.0-6.9): 79  (39.5%)
+     Low (<4.0):       11  (5.5%)
+
+  -- CVSS v2 (42 records) --
+     Median:    6.5
+     Min / Max: 2.7 / 10.0
+
+  -- CVE trend by year --
+     2010:                                          0
+     2011:                                          0
+     2012:                                          0
+     2013:                                          0
+     2014:                                          0
+     2015:                                          0
+     2016:                                          0
+     2017:                                          0
+     2018:                                          0
+     2019:                                          0
+     2020:                                          0
+     2021:                                          0
+
+  -- Top 10 CWE --
+     CWE-862                        13
+     CWE-74                         11
+     CWE-22                         9
+     CWE-284                        9
+     CWE-295                        9
+     CWE-20                         8
+     CWE-79                         8
+     CWE-78                         7
+     CWE-94                         6
+     CWE-269                        6
+
+========================================================
+  P-23 - API  [Generic]
+========================================================
+  Total CVEs: 15
+  RQ1: COVERED
+  N2 (CVSS>=7.0, v3 primary / v2 fallback): 8  (53.3% of N)
+
+  -- CVSS v3 (15 records) --
+     Median:           7.1
+     Min / Max:        3.0 / 9.6
+     Critical (>=9.0): 3  (20.0%)
+     High (7.0-8.9):   5  (33.3%)
+     Medium (4.0-6.9): 6  (40.0%)
+     Low (<4.0):       1  (6.7%)
+
+  -- CVSS v2 (0 records) --
+
+  -- CVE trend by year --
+     2010:                                          0
+     2011:                                          0
+     2012:                                          0
+     2013:                                          0
+     2014:                                          0
+     2015:                                          0
+     2016:                                          0
+     2017:                                          0
+     2018:                                          0
+     2019:                                          0
+     2020:                                          0
+     2021:                                          0
+
+  -- Top 10 CWE --
+     CWE-918                        3
+     CWE-1287                       2
+     CWE-200                        2
+     CWE-862                        1
+     CWE-863                        1
+     CWE-732                        1
+     CWE-755                        1
+     CWE-1284                       1
+     CWE-924                        1
+     CWE-94                         1
+
+========================================================
+  P-24 - Malicious Insider  [Generic]
+========================================================
+  Total CVEs: 3
+  RQ1: GAP
+  N2 (CVSS>=7.0, v3 primary / v2 fallback): 2  (66.7% of N)
+
+  -- CVSS v3 (3 records) --
+     Median:           7.5
+     Min / Max:        5.5 / 7.8
+     Critical (>=9.0): 0  (0.0%)
+     High (7.0-8.9):   2  (66.7%)
+     Medium (4.0-6.9): 1  (33.3%)
+     Low (<4.0):       0  (0.0%)
+
+  -- CVSS v2 (1 records) --
+     Median:    7.2
+     Min / Max: 7.2 / 7.2
+
+  -- CVE trend by year --
+     2010:                                          0
+     2011:                                          0
+     2012:                                          0
+     2013:                                          0
+     2014:                                          0
+     2015:                                          0
+     2016:                                          0
+     2017:                                          0
+     2018:                                          0
+     2019:                                          0
+     2020:                                          0
+     2021:                                          0
+
+  -- Top 10 CWE --
+     CWE-281                        1
+     CWE-295                        1
+     NVD-CWE-noinfo                 1
+
+========================================================
+  P-25 - Hijacking  [Generic]
+========================================================
+  Total CVEs: 26
+  RQ1: COVERED
+  N2 (CVSS>=7.0, v3 primary / v2 fallback): 15  (57.7% of N)
+
+  -- CVSS v3 (26 records) --
+     Median:           7.2
+     Min / Max:        3.5 / 9.8
+     Critical (>=9.0): 3  (11.5%)
+     High (7.0-8.9):   12  (46.2%)
+     Medium (4.0-6.9): 10  (38.5%)
+     Low (<4.0):       1  (3.8%)
+
+  -- CVSS v2 (6 records) --
+     Median:    4.4
+     Min / Max: 3.5 / 5.8
+
+  -- CVE trend by year --
+     2010:                                          0
+     2011:                                          0
+     2012:                                          0
+     2013:                                          0
+     2014:                                          0
+     2015:                                          0
+     2016:                                          0
+     2017:                                          0
+     2018:                                          0
+     2019:                                          0
+     2020:                                          0
+     2021:                                          0
+
+  -- Top 10 CWE --
+     CWE-79                         6
+     CWE-427                        6
+     CWE-284                        3
+     NVD-CWE-noinfo                 3
+     CWE-732                        1
+     CWE-116                        1
+     CWE-601                        1
+     CWE-613                        1
+     CWE-426                        1
+     CWE-295                        1
+
+  OVERLAP: 70 CVEs assigned to multiple categories
+
+========================================================
+  DONE - D_clean.csv: 666 records
+========================================================
+
+Process finished with exit code 0
